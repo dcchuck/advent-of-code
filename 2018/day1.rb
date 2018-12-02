@@ -8,8 +8,6 @@ start = 0
 vals = []
 ans2 = val.cycle do |e|
   start += e
-  # puts start
-  # puts vals.length
   if vals.include?(start)
     puts start
     break
