@@ -1,8 +1,7 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import readFile from "./readFile";
+const input = readFile('day1input');
 
-const input = fs.readFileSync(path.join(__dirname, 'day1input'))
-const numericArray = fs.readFileSync(path.join(__dirname, 'day1input'))
+const numericArray = input
   .toString()
   .split("\n")
   .map(e => parseInt(e,10))
